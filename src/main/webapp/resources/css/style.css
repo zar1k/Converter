@@ -1,0 +1,15 @@
+#formId {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ui-panel {
+    width: 520px;
+}
+
+.ui-button {
+    width: 100%;
+}

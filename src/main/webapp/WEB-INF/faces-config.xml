@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+
+    <!-- Create a managed bean -->
+    <managed-bean>
+        <managed-bean-name>converterBean</managed-bean-name>
+        <managed-bean-class>com.gmail.andreyzarazka.converter.ConverterBean</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+
+    <!-- Navigation -->
+    <navigation-rule>
+        <from-view-id>/pages/input_number.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>result</from-outcome>
+            <to-view-id>/pages/result.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/pages/result.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>back</from-outcome>
+            <to-view-id>/pages/input_number.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
