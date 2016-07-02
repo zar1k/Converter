@@ -53,20 +53,6 @@
             <version>${spring.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.glassfish.web/javax.el -->
-        <dependency>
-            <groupId>org.glassfish.web</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>2.2.6</version>
-        </dependency>
-
-        <!-- Tomcat 8 need this -->
-        <dependency>
-            <groupId>com.sun.el</groupId>
-            <artifactId>el-ri</artifactId>
-            <version>1.0</version>
-        </dependency>
-
         <!-- Primefaces framework -->
         <dependency>
             <groupId>org.primefaces</groupId>
