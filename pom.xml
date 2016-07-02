@@ -11,12 +11,14 @@
 
     <!-- Dependencies version-->
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <javax.inject>1</javax.inject>
         <javax.faces>2.2.13</javax.faces>
         <spring.version>4.3.0.RELEASE</spring.version>
         <primefaces>6.0</primefaces>
         <primefaces-extensions>6.0.0</primefaces-extensions>
-        <all-themes>1.0.10</all-themes>
+        <primefaces.all-themes>1.0.10</primefaces.all-themes>
     </properties>
 
     <dependencies>
@@ -51,6 +53,20 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.glassfish.web/javax.el -->
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>javax.el</artifactId>
+            <version>2.2.6</version>
+        </dependency>
+
+        <!-- Tomcat 8 need this -->
+        <dependency>
+            <groupId>com.sun.el</groupId>
+            <artifactId>el-ri</artifactId>
+            <version>1.0</version>
+        </dependency>
+
         <!-- Primefaces framework -->
         <dependency>
             <groupId>org.primefaces</groupId>
@@ -65,7 +81,7 @@
         <dependency>
             <groupId>org.primefaces.themes</groupId>
             <artifactId>all-themes</artifactId>
-            <version>${all-themes}</version>
+            <version>${primefaces.all-themes}</version>
         </dependency>
     </dependencies>
     <!--Primefaces repository. Need to download themes-->
